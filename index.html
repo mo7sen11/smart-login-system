@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="section w-75 mx-auto my-5 rounded-4">
+            <h1 class="text-center my-3 ">LOGIN</h1>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" autocomplete="off">
+                <label for="userEmail">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="userPassword" placeholder="Password" autocomplete="off">
+                <label for="userPassword">Password</label>
+            </div>
+            <div class="form-check mb-3 mt-2 ms-2 ">
+                <input type="checkbox" class="form-check-input" id="showPassword">
+                <label class="form-check-label user-select-none" for="showPassword">Show Password</label>
+              </div>
+                
+            <p class="text-danger text-center  my-3 d-none invalidInfo" > Invalid Email Or Password</p>
+            <button class=" my-3" id="loginBtn">Login</button>
+            <h2 class="text-center h5 fw-normal">Don’t Have an account? <button id="createBtn">Create
+                    One</button></span></h2>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

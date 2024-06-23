@@ -1,0 +1,87 @@
+body
+{
+    background-color: #24353f;
+}
+h1
+{
+    color: #16a9bf;
+    font-weight: normal;
+    font-size: 40px;
+}
+.section
+{
+    background-color: #999;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    padding: 30px;
+    background-color: #24353f;
+    color: white;
+}
+#loginBtn
+{
+   padding: 8px 48px ;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    outline: none;
+    border: none;
+    color: black;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+
+}
+#loginBtn:hover
+{
+    background-color: #24353f;
+    color: white;
+    border: 1px solid #bbb;
+}
+.form-floating>.form-control
+{
+    padding: 5px 10px;
+}
+.form-floating>.form-control::placeholder
+{
+    color: #171616;
+}
+.form-control +label
+{
+    opacity: 0;
+    transition: all 0.5 ease-in-out;
+}
+.form-floating>.form-control:focus+label
+{
+opacity: 1;
+}
+#createBtn
+{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: darkcyan;
+    position: relative;
+    padding: 0;
+}
+#createBtn::after
+{
+    position: absolute;
+    content: "";
+    left: 10px;
+    bottom: 0px;
+    width: 85%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+    
+}
+#createBtn:hover::after
+{
+    opacity: 1;
+}
+.form-check-input,.form-check-input+label
+{
+    cursor: pointer;
+}

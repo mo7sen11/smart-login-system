@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="section w-75 mx-auto my-5 rounded-4">
+            <h1 class="text-center my-3"> Sign Up</h1>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="userName" placeholder="Your Name" autocomplete="off">
+                <label for="Username"> Username</label>
+                <p class="text-danger  my-3 h6  d-none nameValidation "> Name Shouldn't Start With a Number Or Special
+                    Character and the Length    More Than 2 </p>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" autocomplete="off">
+                <label for="userEmail">Email address</label>
+                <p class="text-danger  my-3 h6  d-none emailValidation ">This Email is Not Valid must be like
+                    (example@(gmail || yahoo).com) </p>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="userPassword" placeholder="Password" autocomplete="off">
+                <label for="userPassword">Password</label>
+                <div class="form-check mb-3 mt-2 ms-2 ">
+                    <input type="checkbox" class="form-check-input" id="showPassword">
+                    <label class="form-check-label user-select-none" for="showPassword">Show Password</label>
+                  </div>
+                <p class="text-danger  my-3 h6  d-none passwordValidation ">The Password Must Be in [a-z ,A-z, _ ] and
+                    Length More Than 8 Characters </p>
+            </div>
+            <p class="text-danger text-center my-3 h6  d-none emptyError">Please Fill All Inputs</p>
+            <p class="text-danger text-center my-3 h6  d-none existError">This Email is Already Exist Enter Another
+                Email </p>
+            <p class="text-success text-center my-3 h6  d-none success h3">Success </p>
+            <button class=" my-3" id="signUpBtn">Sign Up</button>
+            <h2 class="text-center h5 fw-normal">Have an account? <button id="backLogin">Login</button></span></h2>
+        </div>
+    </div>
+    <script src="js/signup.js"></script>
+</body>
+
+</html>
